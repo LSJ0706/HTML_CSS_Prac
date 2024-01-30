@@ -1,0 +1,63 @@
+.container {
+  width: 800px;
+  font-size: 0px;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+}
+/* 
+float 사용하기 
+width가 합쳐지면 100%인데 이렇게 되면 가로행을 전부 차지하므로
+박스배치가 위아래도 됨 
+float -> 이 요소를 띄워주세요
+float를 사용하지 않은 요소는 float 밑으로 배치되기 때문에 보이지 않음
+해결 방법 : float를 사용하지 않는 다음 요소부터 clear 속성을 사용
+
+.left-menu {
+  width: 20%;
+  height: 400px;
+  background-color: cornflowerblue;
+  float: left;
+}
+.right {
+  width: 80%;
+  height: 400px;
+  background-color: coral;
+  float: left;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  clear: both;
+} */
+/*inline-block
+word에서 그림 어울림과 비슷함 요소의 크기만큼만 차지
+스페이스바 공백만큼 공백이 생기기 때문에 붙여 써야함
+해결 방법 : 1.주석기호 사용 2.fontsize 0
+글씨를 쓸 때 박스 배치가 이상해짐 => 
+html에 가상의 baseline이 존재하여 box가 baseline위로 정렬되려고 하기 때문
+vertical-align - inline속성에 적용되는 것
+상하 정렬을 해주는 것
+*/
+.left-menu {
+  width: 20%;
+  height: 400px;
+  background-color: cornflowerblue;
+  display: inline-block;
+  vertical-align: top;
+}
+.right {
+  font-size: 20px;
+  width: 80%;
+  height: 400px;
+  background-color: coral;
+  display: inline-block;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+}

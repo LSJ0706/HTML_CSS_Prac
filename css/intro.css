@@ -1,0 +1,51 @@
+.profile {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: yellowgreen;
+}
+/* div는 박스구조의 태그 display = block을 기본적으로 가짐
+display: block는 가로행을 다 차지하는 것
+워드에서 그림을 넣을 때 그림이 가로행을 전부 가지는 것과 같음.
+css는 상속의 기능을 사용하기 때문에 자식 태그들은 부모 태그들의
+일부 스타일은 자동으로 상속됨.
+
+*/
+.box {
+  width: 100px;
+  background-color: cadetblue;
+  /* 상하좌우 30px씩 마진 */
+  margin: 30px;
+  /* padding은 안쪽 여백을 줌 div생성전에 padding을 40px을 주고 생성*/
+  padding: 20px;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  color: white;
+  box-shadow: 10px 10px 5px cornsilk;
+}
+
+/*  모든 p 태그에 대한 style 
+    # id 를 뜻하는 것 
+    .variable -> class 셀렉터
+    p,sapn...~ -> tag 셀렉터
+    #variable -> id 셀렉터
+    스타일이 겹칠경우 우선순위따라 다르게 정해짐
+    id > class > tag 셀렉터 순으로 스타일링 적용
+    tag안에 style속성은 가장 높음
+
+p {
+  color: blue;
+  text-align: center;
+}
+
+#special {
+  color: red;
+} */
