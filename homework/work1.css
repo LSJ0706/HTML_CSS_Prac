@@ -1,0 +1,50 @@
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  width: 80%;
+  height: 200px;
+  float: left;
+}
+.right {
+  width: 20%;
+  height: 200px;
+  float: left;
+}
+
+.thumbnail {
+  height: 100%;
+}
+
+.profile {
+  width: 50px;
+  float: left;
+  display: block;
+}
+.name {
+  float: left;
+}
+p {
+  margin: 5px;
+}
+
+/* selector 사용하기
+navbar class  안에 li 태그들에게만 적용되는 css
+selector 문법
+class + 공백 : class안에 있는 모든 자식
+class + >    : class안에 있는 직계 자식
+*/
+.navbar li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+}
